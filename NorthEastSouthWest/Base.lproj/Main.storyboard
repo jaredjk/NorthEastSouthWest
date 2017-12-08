@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NorthEastSouthWest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8s-uV-B0n">
+                                <rect key="frame" x="157" y="28" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="HC7-7f-D9G"/>
+                                    <constraint firstAttribute="height" constant="60" id="a06-8m-fGT"/>
+                                </constraints>
+                                <state key="normal" title="North"/>
+                                <connections>
+                                    <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QIP-DK-3Z2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5j-H8-ZVj">
+                                <rect key="frame" x="157" y="587" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="W9l-MR-Chu"/>
+                                    <constraint firstAttribute="height" constant="60" id="wsZ-ry-Lsj"/>
+                                </constraints>
+                                <state key="normal" title="South"/>
+                                <connections>
+                                    <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qq3-CV-rks"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEa-0D-5I4">
+                                <rect key="frame" x="16" y="303" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="KGS-MF-mTZ"/>
+                                    <constraint firstAttribute="height" constant="60" id="rh8-87-wfu"/>
+                                </constraints>
+                                <state key="normal" title="West"/>
+                                <connections>
+                                    <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3DU-7n-8Kc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6b-Hk-lvD">
+                                <rect key="frame" x="299" y="303" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Dkc-5Y-gGz"/>
+                                    <constraint firstAttribute="width" constant="60" id="hdb-4q-bdf"/>
+                                </constraints>
+                                <state key="normal" title="East"/>
+                                <connections>
+                                    <action selector="directionButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9FY-D7-J3d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k8s-uV-B0n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3LR-LI-OuH"/>
+                            <constraint firstItem="CEa-0D-5I4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7mJ-XJ-ebc"/>
+                            <constraint firstItem="k8s-uV-B0n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="AqT-AG-mWI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P5j-H8-ZVj" secondAttribute="bottom" constant="20" id="LSO-fv-hA4"/>
+                            <constraint firstItem="P5j-H8-ZVj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OOr-u6-P8n"/>
+                            <constraint firstItem="CEa-0D-5I4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Xfi-X5-EZW"/>
+                            <constraint firstItem="T6b-Hk-lvD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m2b-al-Ygb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T6b-Hk-lvD" secondAttribute="trailing" constant="16" id="o1Y-WM-pcQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="4qb-48-6Uh" kind="presentation" identifier="DirectionSegue" id="Akq-z4-1bA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Directional Destination View Controller-->
+        <scene sceneID="c2o-Qj-dFG">
+            <objects>
+                <viewController id="4qb-48-6Uh" customClass="DirectionalDestinationViewController" customModule="NorthEastSouthWest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SRn-I8-Xpi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOy-tV-LuX">
+                                <rect key="frame" x="87" y="273" width="200" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="VbO-KS-gmK"/>
+                                    <constraint firstAttribute="height" constant="120" id="mDv-gg-lTe"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="aII-Gs-X0C" kind="unwind" unwindAction="toMainView:" id="TTI-r9-rHx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zOy-tV-LuX" firstAttribute="centerX" secondItem="SRn-I8-Xpi" secondAttribute="centerX" id="s3u-j5-SbF"/>
+                            <constraint firstItem="zOy-tV-LuX" firstAttribute="centerY" secondItem="SRn-I8-Xpi" secondAttribute="centerY" id="vg1-vs-JPl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5z4-S1-tk6"/>
+                    </view>
+                    <connections>
+                        <outlet property="goBackButton" destination="zOy-tV-LuX" id="Cdc-Ku-H74"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0xZ-vJ-gjV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="aII-Gs-X0C" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1324" y="134"/>
+        </scene>
+    </scenes>
+</document>
